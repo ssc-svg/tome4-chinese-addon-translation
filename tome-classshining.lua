@@ -62,7 +62,7 @@ t("THE SUN, ", "艳阳, ", "_t")
 t("fire", "火焰", "effect subtype")
 t("Sunburn", "日炙", "_t")
 t("THESUN", "烈日", "_t")
--- new text
+-- untranslated text
 --[==[
 t("%s", "%s", "tformat")
 --]==]
@@ -141,6 +141,16 @@ t("%s resists the knockback!", " %s 抵抗了击退！", "logSeen")
 t([[In singsong voice you repeat the futility of action.  Every time you cast a spell (that takes a turn), enemies within range %d are knocked back (#SLATE#Spellpwoer vs. Physical#LAST#)
 You may only have one Mantra active at once.]], [[你用单调的声音不断诉说无论干什么都是没用的.  每当你施放法术时 (需要一回合), %d 范围内的敌人将被击退 (#SLATE# 用自身法强对抗对方物理豁免 #LAST#)
 你一次只能激活一个颂歌.]], "tformat")
+t("Mantra Initiate", "颂歌入门", "talent name")
+t([[You have learned to sing the truth of the Sun, in the form of three magical Mantras.
+			Mantra of Precession: Increases your defense by %d and you move 2 spaces at a time if possible.
+			Mantra of Helocentrism: Each round where you do not move, you gain +%d%% damage, stacking 5 times.
+			Mantra of Entropy: When you cast a spell (that takes a turn) enemies within range %d are knocked back.
+You may only have one Mantra active at a time.]], [[你已经学会以三种魔法咒语的形式歌颂太阳的真理
+旋进颂歌: 增加你 %d 的防御，如果可能的话，你每次移动2格。
+日心说的颂歌: 每轮你不移动时，你获得 +%d%% 伤害，叠加5次。
+熵的颂歌: 当你施放一个法术时， %d 范围内的敌人会被击退。
+你一次只能激活一个颂歌。]], "tformat")
 t("Mantra Adept", "颂歌精通", "talent name")
 t([[Your Mantras sear the air with unassailable truth, which does %0.1f fire damage to anyone who hits you in melee.  Additionally, your insanity effects are twice as likely to have high values, both positive and negative.
 Spellpower: increases damage.]], [[你的咒语以无懈可击的真理灼烧空气，对近战攻击你的人造成 %0.1f 点火焰伤害。此外，你的疯狂效果有2倍的概率取到高的数值，无论是正面的还是负面的.
@@ -157,18 +167,6 @@ t([[While repeating a mantra, your positive insanity effects are %d%% stronger, 
 #{italic}#The twists and turns of fate all lead to the inevitable end you have foretold.  Each setback is all part of the design.#{normal}#]], [[当你重复一个咒语时，你的正面疯狂效果会变强 %d%% ，并且正面效果的最大强度从 50%% 增加到 %d%% .
 
 #{italic}#命运的曲折都通向你所预言的必然结局。每一次挫折都是设计的一部分.#{normal}#]], "tformat")
--- new text
-t("Mantra Initiate", "颂歌入门", "talent name")
-t([[You have learned to sing the truth of the Sun, in the form of three magical Mantras.
-			Mantra of Precession: Increases your defense by %d and you move 2 spaces at a time if possible.
-			Mantra of Helocentrism: Each round where you do not move, you gain +%d%% damage, stacking 5 times.
-			Mantra of Entropy: When you cast a spell (that takes a turn) enemies within range %d are knocked back.
-You may only have one Mantra active at a time.]], [[你已经学会以三种魔法咒语的形式歌颂太阳的真理
-旋进颂歌: 增加你 %d 的防御，如果可能的话，你每次移动2格。
-日心说的颂歌: 每轮你不移动时，你获得 +%d%% 伤害，叠加5次。
-熵的颂歌: 当你施放一个法术时， %d 范围内的敌人会被击退。
-你一次只能激活一个颂歌。]], "tformat")
-
 
 ------------------------------------------------
 section "tome-classshining/data/talents/nuclear.lua"
@@ -209,7 +207,7 @@ t([[Your spells surge in barely-controlled chain reactions, burning through your
 %s]], [[你的颂歌几乎无法控制的连锁反应，以不可阻挡的力量燃烧着你的肉体。你每次暴击获得 %d 法强(叠加3次)，有 %d%% 的机会忽略任何伤害实例，但法术暴击消耗你生命的 %0.1f%% (每回合最多一次)。伤害无视护盾，且不会被你的映像体分担.
 
 %s]], "tformat")
--- new text
+-- untranslated text
 --[==[
 t("#GOLD#%d#LAST#", "#GOLD#%d#LAST#", "tformat")
 --]==]
@@ -280,10 +278,6 @@ The damage will increase with your spellpower.
 
 #YELLOW# 该技能是可选的，但会使太阳堡垒的能量的消耗增加10点 #LAST#]], "tformat")
 t("Insurmountable Light", "不可逾越的光", "talent name")
-t("Walking Citadel", "移動城堡", "talent name")
-t("DEBUG effect at (%d, %d)", "在 (%d, %d) 排错效果", "tformat")
-t("Conjure a surge of celestial power and recreate an existing solar citadel at your current location, with refreshed duration. Any foe standing within the old or new location will suffer %0.1f light and %0.1f fire damage and be numbed for %d turns, dealing %d%% less damage.", "召唤一股天界力量，在你当前的位置重建一个现有的太阳城堡，并刷新持续时间。任何站在新或旧位置的敌人将受到 %0.1f 点光属性伤害和 %0.1f 点火炎伤害，并被麻木%d回合，降低 %d%% 的伤害.", "tformat")
--- new text
 t([[Enhance your solar citadel with unquenchable flames. You gain 100%% silence immunity while standing in it, while enemies take an additional %0.1f fire damage each turn.
 The damage will increase with your spellpower.
 
@@ -295,6 +289,9 @@ The damage will increase with your spellpower.
 #{italic}# 团结起来，我们的光将无处不在，直到时空的尽头. #{normal}#
 
 #YELLOW# 该技能是可选的，但会使太阳堡垒的能量的消耗增加10点#LAST#]], "tformat")
+t("Walking Citadel", "移動城堡", "talent name")
+t("DEBUG effect at (%d, %d)", "在 (%d, %d) 排错效果", "tformat")
+t("Conjure a surge of celestial power and recreate an existing solar citadel at your current location, with refreshed duration. Any foe standing within the old or new location will suffer %0.1f light and %0.1f fire damage and be numbed for %d turns, dealing %d%% less damage.", "召唤一股天界力量，在你当前的位置重建一个现有的太阳城堡，并刷新持续时间。任何站在新或旧位置的敌人将受到 %0.1f 点光属性伤害和 %0.1f 点火炎伤害，并被麻木%d回合，降低 %d%% 的伤害.", "tformat")
 
 ------------------------------------------------
 section "tome-classshining/data/talents/sunlight.lua"
@@ -323,6 +320,11 @@ t([[Drawing on your deep insight into solar mysteries, you create a powerful 3-w
 		The damage will increase with your Spellpower.]], [[根据你对太阳奥秘的深刻洞察，创造一个强大的3格宽的光束。光束造成 %0.2f 点光属性伤害并晕眩敌人3回合.
 		伤害随发强增加.]], "tformat")
 -- new text
+--[==[
+t("Ready", "准备完成", "_t")
+--]==]
+
+-- untranslated text
 --[==[
 t("%d", "%d", "tformat")
 t("%d/%d", "%d/%d", "tformat")
